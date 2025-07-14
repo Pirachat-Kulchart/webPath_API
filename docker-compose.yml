@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  api1:
+    build: ./api1
+    ports:
+      - "5000:5000"
+    depends_on:
+      - api2
+    networks:
+      - apinet
+
+  api2:
+    build: ./api2
+    ports:
+      - "6000:6000"
+    networks:
+      - apinet
+
+networks:
+  apinet:
