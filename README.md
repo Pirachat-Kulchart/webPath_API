@@ -1,6 +1,4 @@
-# webPath_API Project (API1 -> API2 via Docker Compose)
-
-<!-- # webPath_API Project Hello World (Docker Compose) -->
+# webPath_API Project (API1 → API2 via Docker Compose)
 
 ## ระบบนี้ประกอบด้วย 2 API
 
@@ -16,24 +14,12 @@
 ### 2. Clone โปรเจกต์
 
 ```bash
-git clone https://github.com/username/multi-api-project.git
+git clone https://github.com/pirac-0/webPath_API.git
 cd webPath_API
+```
 
----
-
-## 3. ตั้งให้ Repository เป็น Public
-
-1. ไปที่หน้า GitHub repository ของคุณ
-2. กด **Settings** → **Change Visibility** → เลือก **Public**
-3. ก็อปลิงก์เช่น `https://github.com/username/multi-api-project`
-
----
-
-## 4. แนะนำให้คนใช้งานแบบนี้
-
-ให้เขาทำเพียง:
+### 3. สั่งรันโปรเจกต์ด้วย Docker Compose
 
 ```bash
-git clone https://github.com/username/multi-api-project.git
-cd multi-api-project
 docker-compose up --build
+```
