@@ -2,7 +2,7 @@
 
 <!-- # webPath_API Project Hello World (Docker Compose) -->
 
-## ระบบนี้ประกอบด้วย 2 API:
+## ระบบนี้ประกอบด้วย 2 API
 
 - **API1** (port 5000): รับ request และส่งต่อให้ API2
 - **API2** (port 6000): ตอบกลับข้อความ
