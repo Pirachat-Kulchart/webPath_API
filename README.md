@@ -35,6 +35,12 @@ docker-compose up --build
   - `http://localhost:5000/hello`
   - `http://localhost:6000/world`
 
+## การทดสอบระบบ (Unit + Integration)
+
+### ติดตั้ง dependencies
+
+```bash
+pip install pytest requests
 ---
 
 **หมายเหตุ:**  
