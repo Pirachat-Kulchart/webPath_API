@@ -35,15 +35,25 @@ docker-compose up --build
   - `http://localhost:5000/hello`
   - `http://localhost:6000/world`
 
-## การทดสอบระบบ (Unit + Integration)
+### 5. วิธีรัน Unit Test
 
-### ติดตั้ง dependencies
+- ติดตั้ง dependencies ก่อน (ถ้ายังไม่ได้ติดตั้ง):
 
-```bash
-pip install pytest requests
----
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+- รัน unit test ด้วยคำสั่ง:
+
+  ```bash
+  pytest
+  ```
+
+- ผลลัพธ์จะแสดงว่าแต่ละเทสผ่านหรือไม่ใน terminal
 
 **หมายเหตุ:**  
 
 - ตรวจสอบว่าไม่มีโปรแกรมอื่นใช้ port 5000 หรือ 6000 อยู่ก่อนแล้ว
+- ให้แน่ใจว่า API ทั้งสองตัวกำลังรันอยู่ก่อนทดสอบ (เช่น ใช้ `docker-compose up`)
+- สามารถดูไฟล์เทสได้ที่โฟลเดอร์ `tests/`
 - หากต้องการหยุดการทำงาน กด `Ctrl+C` ใน terminal หรือใช้ `docker-compose down`
