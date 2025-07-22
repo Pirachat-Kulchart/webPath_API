@@ -46,7 +46,7 @@ docker-compose up --build
 - รัน unit test ด้วยคำสั่ง:
 
   ```bash
-  pytest
+  pytest tests
   ```
 
 - ผลลัพธ์จะแสดงว่าแต่ละเทสผ่านหรือไม่ใน terminal
